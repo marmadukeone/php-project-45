@@ -1,2 +1,5 @@
 #!/usr/bin/env php
-<?PHP echo "Welcome to the Brain Games!";
+<?PHP
+require_once 'src/Cli.php';
+use function BrainGames\Cli\askName;
+askName();
