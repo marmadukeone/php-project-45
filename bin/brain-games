@@ -1,1 +1,2 @@
+#!/usr/bin/env php
 <?PHP echo "Welcome to the Brain Games!";
