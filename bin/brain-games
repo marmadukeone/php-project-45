@@ -1,6 +1,6 @@
 #!/usr/bin/env php
 <?PHP
 require_once 'src/engine.php';
-use function BrainGames\Engine\greetingAndGetName;
+//use function BrainGames\Engine\greetingAndGetName;
 
 $name = greetingAndGetName();
