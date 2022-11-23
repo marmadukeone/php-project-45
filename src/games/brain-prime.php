@@ -13,14 +13,13 @@ use function cli\prompt;
 function gameIsPrime()
 {
     $userName = greetingAndGetName();
-    line('What number is missing in the progression?');
+    line('Answer "yes" if given number is prime. Otherwise answer "no".');
     $isContinue = true;
     $countSuccessAnswer = 0;
     while ($isContinue) {
+        $value = random_int(2,101);
+        $correctAnswer = isPrime($value);
 
-        $correctAnswer = 0;
-
-        $value = 0;
         //line("{$value}");
         giveQuestion($value);
         $userAnswer = getAnswer();
@@ -34,6 +33,15 @@ function gameIsPrime()
         }
     }
 
+}
+function isPrime(int $inputNumber):string
+{
+    $i = 2;
+    while ($i < $inputNumber) {
+        if ($inputNumber % $i === 0) return 'no';
+        $i++;
+    }
+    return 'yes';
 }
 
 
