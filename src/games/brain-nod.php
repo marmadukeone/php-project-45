@@ -6,13 +6,6 @@ require_once 'vendor/autoload.php';
 require_once 'src/games/Cli.php';
 require_once 'src/engine.php';
 
-use function cli\line;
-use function cli\prompt;
-use function BrainGames\Engine\greetingAndGetName;
-use function BrainGames\Engine\giveQuestion;
-use function BrainGames\Engine\getAnswer;
-use function BrainGames\Engine\compareAnswer;
-use function BrainGames\Engine\isTheSuccessEnd;
 
 function gameIsNod()
 {
