@@ -2,8 +2,6 @@
 <?php
 
 require_once 'src/games/brain-calc.php';
-//require_once 'src/engine.php';
 use function BrainGames\Calc\gameIsCalc;
-//use function BrainGames\Cli\askName;
 
 gameIsCalc();

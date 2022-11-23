@@ -2,8 +2,7 @@
 <?php
 
 require_once 'src/games/isChet.php';
-//require_once 'src/engine.php';
+
 use function BrainGames\Chet\gameIsChet;
-//use function BrainGames\Cli\askName;
 
 gameIsChet();
