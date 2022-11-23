@@ -15,7 +15,8 @@
       "bin/brain-even",
       "bin/brain-calc",
       "bin/brain-nod",
-      "bin/brain-progression"
+      "bin/brain-progression",
+      "bin/brain-prime"
 
 
     ],
