@@ -1,0 +1,7 @@
+#!/usr/bin/env php
+<?php
+
+require_once 'src/games/brain-progression.php';
+use function BrainGames\Progression\gameIsProgression;
+
+gameIsProgression();

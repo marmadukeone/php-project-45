@@ -12,9 +12,11 @@
     },
     "bin": [
       "bin/brain-games",
-        "bin/brain-even",
-        "bin/brain-calc",
-        "bin/brain-nod"
+      "bin/brain-even",
+      "bin/brain-calc",
+      "bin/brain-nod",
+      "bin/brain-progression"
+
 
     ],
     "require-dev": {
