@@ -14,15 +14,16 @@ function gameIsProgression()
 {
     $userName = greetingAndGetName();
     line('What number is missing in the progression?');
-    /*
+    $sizeArray = 10;
     $isContinue = true;
     $countSuccessAnswer = 0;
     while ($isContinue) {
-        $value1 = random_int(1, 20);
-        $operandInt = random_int(1, 4);
-        $value2 = random_int(1, 20);
-        $value = getValueStr($value1, $value2, $operandInt);
-        $correctAnswer = getValueFloat($value1, $value2, $operandInt);
+        $array = createAndFillArrayRand($sizeArray);
+        $indexRemove = random_int(0,9);
+        $correctAnswer = (string) $array[$indexRemove];
+        $array[$indexRemove] = '..';
+        $value = implode (' ', $array);
+        //line("{$value}");
         giveQuestion($value);
         $userAnswer = getAnswer();
 
@@ -34,7 +35,19 @@ function gameIsProgression()
             $isContinue = false;
         }
     }
-    */
+
 }
+
+function createAndFillArrayRand (int $sizeArray):array
+{
+    $step = random_int(1,5);
+    $resArr = [];
+    $resArr[0] = random_int(0,10);
+    for($i = 1; $i < $sizeArray; $i++) {
+        $resArr[$i] = $resArr[0] + $step * $i;
+    }
+    return $resArr;
+}
+
 
 
