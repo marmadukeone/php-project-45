@@ -1,0 +1,11 @@
+#!/usr/bin/env php
+<?php
+
+require_once 'src/isChet.php';
+require_once 'src/Cli.php';
+
+use function BrainGames\Chet\isChet;
+use function BrainGames\Cli\askName;
+
+$name = askName();
+isChet($name);
