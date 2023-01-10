@@ -1,4 +1,5 @@
 <?php
+
 //namespace BrainGames\Engine;
 
 require_once __DIR__ . '/../vendor/autoload.php';
@@ -23,7 +24,7 @@ function getAnswer(): string
     return strtolower(prompt('Your answer'));
 }
 
-function compareAnswer ($userAnswer, $correctAnswer, $userName): bool
+function compareAnswer($userAnswer, $correctAnswer, $userName): bool
 {
     if ($userAnswer === $correctAnswer) {
         line("Correct!");
