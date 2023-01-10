@@ -36,7 +36,7 @@ function compareAnswer($userAnswer, $correctAnswer, $userName): bool
     }
 }
 
-function isTheSuccessEnd($countSuccessAnswer, $userName):bool
+function isTheSuccessEnd($countSuccessAnswer, $userName): bool
 {
     if ($countSuccessAnswer === 3) {
         line("Congratulations, {$userName}!");
