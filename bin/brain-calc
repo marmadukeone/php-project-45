@@ -1,7 +1,8 @@
 #!/usr/bin/env php
 <?php
 
-require_once '../src/games/brain-calc.php';
+require_once __DIR__ . '/../src/games/brain-calc.php';
+
 use function BrainGames\Calc\gameIsCalc;
 
 gameIsCalc();

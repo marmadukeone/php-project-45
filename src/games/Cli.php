@@ -1,9 +1,8 @@
 <?php
 namespace BrainGames\Cli;
 
-require_once 'vendor/autoload.php';
-require_once 'src/games/Cli.php';
-require_once 'src/engine.php';
+require_once __DIR__ . '/../../vendor/autoload.php';
+require_once __DIR__ . '/../engine.php';
 
 function Gogreeting ()
 {

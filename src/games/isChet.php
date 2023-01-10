@@ -2,9 +2,9 @@
 
 namespace BrainGames\Chet;
 
-require_once 'vendor/autoload.php';
-require_once 'src/games/Cli.php';
-require_once 'src/engine.php';
+require_once __DIR__ . '/../../vendor/autoload.php';
+require_once 'Cli.php';
+require_once __DIR__ . '/../engine.php';
 
 use function cli\line;
 use function cli\prompt;
@@ -13,7 +13,7 @@ use function cli\prompt;
 function gameIsChet()
 {
     $userName = greetingAndGetName();
-    line('Answer "yes" if the number is even, otherwise answer "no"');
+    line('Answer "yes" if the number is even, otherwise answer "no".');
     $isContinue = true;
     $countSuccesAnswer = 0;
     while( $isContinue) {

@@ -2,9 +2,9 @@
 
 namespace BrainGames\Calc;
 
-require_once 'vendor/autoload.php';
-require_once 'src/games/Cli.php';
-require_once 'src/engine.php';
+require_once __DIR__ . '/../../vendor/autoload.php';
+require_once __DIR__ . '/Cli.php';
+require_once __DIR__ . '/../engine.php';
 
 use function cli\line;
 use function cli\prompt;
@@ -17,7 +17,7 @@ function gameIsCalc()
     $countSuccessAnswer = 0;
     while ($isContinue) {
         $value1 = random_int(1, 20);
-        $operandInt = random_int(1, 4);
+        $operandInt = random_int(1, 3);
         $value2 = random_int(1, 20);
         $value = getValueStr($value1, $value2, $operandInt);
         $correctAnswer = getValueFloat($value1, $value2, $operandInt);
@@ -39,7 +39,6 @@ function getValueStr ($value1, $value2, $operand):string
         case '1': return "{$value1} + {$value2}";
         case '2': return "{$value1} - {$value2}";
         case '3': return "{$value1} * {$value2}";
-        case '4': return "{$value1} / {$value2}";
         default: return '';
     }
 }
@@ -49,7 +48,6 @@ function getValueFloat ($value1, $value2, $operand):string
         case '1': return $value1 + $value2;
         case '2': return $value1 - $value2;
         case '3': return $value1 * $value2;
-        case '4': return $value1 / $value2;
         default: return 0;
     }
 }

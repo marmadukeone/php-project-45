@@ -2,9 +2,11 @@
 
 namespace BrainGames\Nod;
 
-require_once 'vendor/autoload.php';
-require_once 'src/games/Cli.php';
-require_once 'src/engine.php';
+require_once __DIR__ . '/../../vendor/autoload.php';
+require_once 'Cli.php';
+require_once __DIR__ . '/../engine.php';
+
+use function cli\line;
 
 
 function gameIsNod()

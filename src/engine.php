@@ -1,14 +1,14 @@
 <?php
 //namespace BrainGames\Engine;
 
-require_once 'vendor/autoload.php';
+require_once __DIR__ . '/../vendor/autoload.php';
 
 use function cli\line;
 use function cli\prompt;
 
 function greetingAndGetName():string
 {
-    line('Welcome to the Brain Game!');
+    line('Welcome to the Brain Games!');
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
     return $name;
@@ -21,7 +21,7 @@ function giveQuestion (string $valueQuestion)
 
 function getAnswer ():string
 {
-    return strtolower(prompt('Your answer: '));
+    return strtolower(prompt('Your answer'));
 }
 
 function compareAnswer ($userAnswer, $correctAnswer, $userName): bool

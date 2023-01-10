@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
+require_once __DIR__ . '/../src/games/brain-nod.php';
 
-require_once '../src/games/brain-nod.php';
 use function BrainGames\Nod\gameIsNod;
 
 gameIsNod();
