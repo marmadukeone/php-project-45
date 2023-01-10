@@ -1,6 +1,6 @@
 #!/usr/bin/env php
 <?php
-require_once 'src/games/brain-prime.php';
+require_once '../src/games/brain-prime.php';
 use function BrainGames\Prime\gameIsPrime;
 
 gameIsPrime();

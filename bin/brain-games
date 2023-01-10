@@ -1,6 +1,6 @@
 #!/usr/bin/env php
 <?PHP
-require_once 'src/games/Cli.php';
+require_once '../src/games/Cli.php';
 use function BrainGames\Cli\Gogreeting;
 
 Gogreeting();
