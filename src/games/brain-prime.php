@@ -16,11 +16,11 @@ function gameIsPrime()
     $isContinue = true;
     $countSuccessAnswer = 0;
     while ($isContinue) {
-        $value = (string)random_int(2, 101);
+        $value = random_int(2, 101);
         $correctAnswer = isPrime($value);
 
         //line("{$value}");
-        giveQuestion($value);
+        giveQuestion((string) $value);
         $userAnswer = getAnswer();
 
         $isTrueAnswer = compareAnswer($userAnswer, $correctAnswer, $userName);
