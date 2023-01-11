@@ -36,11 +36,11 @@ function gameIsCalc()
 function getValueStr(int $value1, int $value2, int $operand): string
 {
     switch ($operand) {
-        case '1':
+        case 1:
             return "{$value1} + {$value2}";
-        case '2':
+        case 2:
             return "{$value1} - {$value2}";
-        case '3':
+        case 3:
             return "{$value1} * {$value2}";
         default:
             return '';
@@ -49,11 +49,11 @@ function getValueStr(int $value1, int $value2, int $operand): string
 function getValueFloat(int $value1, int $value2, int $operand): string
 {
     switch ($operand) {
-        case '1':
+        case 1:
             return $value1 + $value2;
-        case '2':
+        case 2:
             return $value1 - $value2;
-        case '3':
+        case 3:
             return $value1 * $value2;
         default:
             return 0;
