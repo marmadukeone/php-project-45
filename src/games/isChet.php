@@ -18,7 +18,7 @@ function gameIsChet()
     while ($isContinue) {
         $value = random_int(1, 20);
         $correctAnswer = ($value % 2) === 0 ? 'yes' : 'no';
-        giveQuestion($value);
+        giveQuestion((string)$value);
         $userAnswer = getAnswer();
         $isTrueAnswer = compareAnswer($userAnswer, $correctAnswer, $userName);
         if ($isTrueAnswer) {

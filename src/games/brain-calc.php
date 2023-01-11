@@ -33,7 +33,7 @@ function gameIsCalc()
         }
     }
 }
-function getValueStr($value1, $value2, $operand): string
+function getValueStr(int $value1, int $value2, string $operand): string
 {
     switch ($operand) {
         case '1':
@@ -46,7 +46,7 @@ function getValueStr($value1, $value2, $operand): string
             return '';
     }
 }
-function getValueFloat($value1, $value2, $operand): string
+function getValueFloat(int $value1, int $value2, string $operand): string
 {
     switch ($operand) {
         case '1':

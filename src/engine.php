@@ -24,7 +24,7 @@ function getAnswer(): string
     return strtolower(prompt('Your answer'));
 }
 
-function compareAnswer($userAnswer, $correctAnswer, $userName): bool
+function compareAnswer(string $userAnswer, string $correctAnswer, string $userName): bool
 {
     if ($userAnswer === $correctAnswer) {
         line("Correct!");
@@ -36,7 +36,7 @@ function compareAnswer($userAnswer, $correctAnswer, $userName): bool
     }
 }
 
-function isTheSuccessEnd($countSuccessAnswer, $userName): bool
+function isTheSuccessEnd(int $countSuccessAnswer, string $userName): bool
 {
     if ($countSuccessAnswer === 3) {
         line("Congratulations, {$userName}!");
