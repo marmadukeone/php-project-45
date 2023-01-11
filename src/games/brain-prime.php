@@ -16,7 +16,7 @@ function gameIsPrime()
     $isContinue = true;
     $countSuccessAnswer = 0;
     while ($isContinue) {
-        $value = random_int(2,101);
+        $value = random_int(2, 101);
         $correctAnswer = isPrime($value);
 
         //line("{$value}");
@@ -31,14 +31,15 @@ function gameIsPrime()
             $isContinue = false;
         }
     }
-
 }
 
 function isPrime(int $inputNumber): string
 {
     $i = 2;
     while ($i < $inputNumber) {
-        if ($inputNumber % $i === 0) return 'no';
+        if ($inputNumber % $i === 0) {
+            return 'no';
+        }
         $i++;
     }
     return 'yes';

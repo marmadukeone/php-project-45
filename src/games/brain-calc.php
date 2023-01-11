@@ -36,18 +36,26 @@ function gameIsCalc()
 function getValueStr($value1, $value2, $operand): string
 {
     switch ($operand) {
-        case '1': return "{$value1} + {$value2}";
-        case '2': return "{$value1} - {$value2}";
-        case '3': return "{$value1} * {$value2}";
-        default: return '';
+        case '1': 
+            return "{$value1} + {$value2}";
+        case '2': 
+            return "{$value1} - {$value2}";
+        case '3': 
+            return "{$value1} * {$value2}";
+        default: 
+            return '';
     }
 }
 function getValueFloat($value1, $value2, $operand): string
 {
     switch ($operand) {
-        case '1': return $value1 + $value2;
-        case '2': return $value1 - $value2;
-        case '3': return $value1 * $value2;
-        default: return 0;
+        case '1': 
+            return $value1 + $value2;
+        case '2': 
+            return $value1 - $value2;
+        case '3': 
+            return $value1 * $value2;
+        default: 
+            return 0;
     }
 }

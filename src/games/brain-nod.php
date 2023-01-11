@@ -18,7 +18,7 @@ function gameIsNod()
         $value1 = random_int(1, 30);
         $value2 = random_int(1, 30);
         $value = "{$value1} {$value2}";
-        $correctAnswer = getNod($value1,$value2);
+        $correctAnswer = getNod($value1, $value2);
         giveQuestion($value);
         //line("{$correctAnswer}");
         $userAnswer = getAnswer();
@@ -38,7 +38,9 @@ function getNod(int $value1, int $value2): string
     $nod = 1;
     for ($i = 1; $i <= $lessvalue; $i++) {
         if (($value1 % $i === 0) && ($value2 % $i === 0)) {
-            if ($i > $nod) $nod = $i;
+            if ($i > $nod) {
+                $nod = $i;
+            }
         }
     }
     return $nod;

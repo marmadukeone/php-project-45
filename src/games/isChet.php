@@ -15,7 +15,7 @@ function gameIsChet()
     line('Answer "yes" if the number is even, otherwise answer "no".');
     $isContinue = true;
     $countSuccesAnswer = 0;
-    while( $isContinue) {
+    while ($isContinue) {
         $value = random_int(1, 20);
         $correctAnswer = ($value % 2) === 0 ? 'yes' : 'no';
         giveQuestion($value);
