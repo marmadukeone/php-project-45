@@ -9,7 +9,6 @@ require_once __DIR__ . '/../engine.php';
 use function cli\line;
 use function cli\prompt;
 
-
 function gameIsPrime()
 {
     $userName = greetingAndGetName();
@@ -34,7 +33,8 @@ function gameIsPrime()
     }
 
 }
-function isPrime(int $inputNumber):string
+
+function isPrime(int $inputNumber): string
 {
     $i = 2;
     while ($i < $inputNumber) {
@@ -43,8 +43,3 @@ function isPrime(int $inputNumber):string
     }
     return 'yes';
 }
-
-
-
-
-

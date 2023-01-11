@@ -8,7 +8,6 @@ require_once __DIR__ . '/../engine.php';
 
 use function cli\line;
 
-
 function gameIsNod()
 {
     $userName = greetingAndGetName();
@@ -33,7 +32,7 @@ function gameIsNod()
     }
 }
 
-function getNod(int $value1, int $value2):string
+function getNod(int $value1, int $value2): string
 {
     $lessvalue = $value1 < $value2 ? $value1 : $value2;
     $nod = 1;
@@ -44,4 +43,3 @@ function getNod(int $value1, int $value2):string
     }
     return $nod;
 }
-

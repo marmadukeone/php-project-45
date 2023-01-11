@@ -9,7 +9,6 @@ require_once __DIR__ . '/../engine.php';
 use function cli\line;
 use function cli\prompt;
 
-
 function gameIsChet()
 {
     $userName = greetingAndGetName();

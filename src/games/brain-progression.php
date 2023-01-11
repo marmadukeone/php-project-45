@@ -9,7 +9,6 @@ require_once __DIR__ . '/../engine.php';
 use function cli\line;
 use function cli\prompt;
 
-
 function gameIsProgression()
 {
     $userName = greetingAndGetName();
@@ -38,7 +37,7 @@ function gameIsProgression()
 
 }
 
-function createAndFillArrayRand (int $sizeArray):array
+function createAndFillArrayRand(int $sizeArray): array
 {
     $step = random_int(1,5);
     $resArr = [];
@@ -48,6 +47,3 @@ function createAndFillArrayRand (int $sizeArray):array
     }
     return $resArr;
 }
-
-
-

@@ -1,6 +1,8 @@
 #!/usr/bin/env php
 <?php
+
 require_once __DIR__ . '/../src/games/brain-prime.php';
+
 use function BrainGames\Prime\gameIsPrime;
 
 gameIsPrime();
